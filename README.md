@@ -8,23 +8,35 @@ To write a program to find the GCD of two numbers using function.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1. Define a function.
-2. Get the two numbers from the user.
-3. Compare the two values, to find the smaller number.
-4. Use for() and if() loop to find the GCD of the two numbers.
+### Step 1 :
+Define a function.
+### Step 2 :
+Get the two numbers from the user.
+### Step 3 :
+Compare the two values, to find the smaller number.
+### Step 4 :
+Use for() and if() loop to find the GCD of the two numbers.
 
 ## Program:
 ```
-/*
-Program to find the gcd of two number using function.
-Developed by: 
-RegisterNumber:  
-*/
+#Program to find the gcd of two number using function.
+#Developed by: S Kantha Sishanth
+#RegisterNumber: 22007660
+def gcd():
+    n1,n2=int(input()),int(input())
+    if n1<n2:
+        smaller=n1
+    else:
+        smaller=n2
+    for i in range(1,smaller+1):
+        if n1%i==0 and n2%i==0:
+            gcd=i
+    print("GCD of two numbers is:",gcd)
+            
 ```
 
 ## Output:
-![gcd of two number](gcd.png)
-
+!['output](/GCD.png)
 
 ## Result:
 Thus the program to find the GCD of two numbers is written and verified using python programming.
